@@ -1,0 +1,12 @@
+{
+  "name": "Bokeh Dashboard Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [5006],
+  "portsAttributes": {
+    "5006": {
+      "label": "Bokeh Server",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
